@@ -1,0 +1,43 @@
+.countdown-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  height: 10vh;
+  background-color: black;
+  font-family: Arial, sans-serif;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  /* padding: 20px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  /* font-weight: 900; */
+}
+
+/* .time {
+  text-align: center;
+  margin: 0 10px;
+} */
+
+.time span {
+  display: block;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+.label {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.divider {
+  font-size: 48px;
+  color: white;
+  margin: 0 10px;
+}

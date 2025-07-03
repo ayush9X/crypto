@@ -1,0 +1,86 @@
+/* Navbar container */
+nav {
+  background-color: #101214;
+  color: #9aa7aa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  flex-wrap: wrap;
+}
+
+/* Wrapper for logo + burger (default for large screens) */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #e1f5f8;
+  text-decoration: none;
+}
+
+/* Burger menu icon */
+.burger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #00c9ba;
+  cursor: pointer;
+}
+
+/* Menu links */
+.menu {
+  display: flex;
+  gap: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.menu a {
+  color: #9aa7aa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+  color: #00d1c1;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-left {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #101214;
+    padding: 10px 0;
+    margin-top: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+}
